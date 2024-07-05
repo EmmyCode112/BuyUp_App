@@ -1,0 +1,7 @@
+.getApp img {
+    cursor: pointer;
+    transition: .3s linear;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

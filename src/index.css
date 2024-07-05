@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap");
+* {
+  font-family: "Outfit", sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  object-fit: cover;
+}
+/* green == #20b120  red == #d32e2e*/
+body {
+  background-color: #e7e5e585;
+  /* box-sizing: border-box; */
+}
+
+li,
+a,
+button,
+div,
+p {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+section {
+  padding: 60px;
+}
+.App {
+  /* padding-top: 60px; */
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #e7e5e585;
+}
+
+/* general */
+
+.grid-cols {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.flexible {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+@media (max-width:978px) {
+  section {
+    padding: 30px;
+  }
+}
+@media (max-width:560px) {
+  section {
+    padding: 30px 15px;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

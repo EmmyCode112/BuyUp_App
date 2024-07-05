@@ -1,0 +1,20 @@
+h5 {
+    display: inline-block;
+}
+h5::after {
+    width: auto;
+    background-color: tomato;
+    height: 2px ;
+    content: '';
+    margin-top: 5px;
+    display: block;
+}
+.hover {
+    transition: .3s;
+}
+
+.hover:hover {
+    background-color: #a31d05 !important;
+    color: white;
+    transition: .3s linear;
+}

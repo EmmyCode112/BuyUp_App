@@ -1,0 +1,39 @@
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color:#a31d05 ;
+  color: white; /* White arrow color */
+  border-radius: 50%; /* Make buttons round */
+  width: 40px; /* Set button size */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.test-item {
+    border: 2px solid #a31d05;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px; 
+}
+
+.swiper-button-next {
+  right: 10px;
+  /* top: 30%; */
+
+}
+
+.swiper-button-prev {
+  left: 10px; 
+  /* top: 30%; */
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: .9;
+}

@@ -1,0 +1,76 @@
+.cards {
+    padding: 10px;
+    z-index: 1;
+    border: none;
+    align-items: center;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+}
+.card-con {
+    flex-basis: 23%;
+}
+.links li a {
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 50%;
+    color: #a31d05;
+    background-color:#d8d8d8c7 ;
+    transition: .3s linear;
+    &:hover {
+        background-color: #a31d05;
+        color: white;
+
+    }
+}
+
+.line {
+    width: 3px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #a31d05;
+    transition: .3s;
+}
+.line2 {
+    width: 3px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #a31d05;
+    transition: .5s;
+}
+
+.line3 {
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #a31d05;
+    transition: .5s;
+}
+
+.line4 {
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #a31d05;
+    transition: .5s;
+}
+
+.card-con:hover .line2 {
+    height: 100%;
+}
+.card-con:hover .line {
+    height: 100%;
+}
+.card-con:hover .line3 {
+    width: 100%;
+}
+.card-con:hover .line4 {
+    width: 100%;
+}
